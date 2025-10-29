@@ -69,6 +69,10 @@
       padding: 20px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.3);
       transition: transform 0.2s;
+      cursor: pointer; /* make pointer appear when hovering anywhere */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
     }
     .card:hover {
       transform: translateY(-5px);
@@ -77,6 +81,7 @@
       color: #fff;
       text-decoration: none;
       font-weight: bold;
+      flex: 1; /* fill the card */
     }
     .card p {
       font-size: 0.9em;
@@ -95,16 +100,16 @@
       <a href="https://www.linkedin.com/in/claudio-vitti-1078b617b" target="_blank">LinkedIn</a>
     </div>
     <div class="main">
-      <h2>Small Boat Fishing Pressure Project</h2>
+      <h2>Small Boat Fishing Project</h2>
       <div class="cards">
-        <div class="card">
-          <a href="chl_timeline.html" target="_blank">Chlorophyll-a Timeline</a>
-          <p>Visualize chlorophyll-a concentration from Jan 2024/2025.</p>
-        </div>
-        <div class="card">
-          <a href="fishing_timeline.html" target="_blank">Fishing Effort Timeline</a>
-          <p>Fishing Effort (GFW) for study site from Jan 2024/2025 overlaid onto EUNIS 2007 Marine Habitat Map.</p>
-        </div>
+        <a href="chl_timeline.html" target="_blank" class="card">
+          <span>Chlorophyll-a Timeline</span>
+          <p>Chlorophyll-a concentration from Jan 2024/2025.</p>
+        </a>
+        <a href="fishing_timeline.html" target="_blank" class="card">
+          <span>Fishing Effort Timeline</span>
+          <p>Fishing Effort (GFW) from Jan 2024/2025 overlaid onto EUNIS 2007 Marine Habitat.</p>
+        </a>
       </div>
     </div>
   </div>
