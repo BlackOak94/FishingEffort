@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,19 +54,41 @@
         margin-bottom: 20px;
     }
 
-    .linkedin-btn {
+    .buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .btn {
         display: inline-block;
-        background: #0073b1;
-        color: #fff;
-        text-decoration: none;
         padding: 10px 25px;
         border-radius: 50px;
         font-weight: 600;
-        transition: background 0.3s ease;
+        text-decoration: none;
+        transition: background 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn:hover {
+        transform: translateY(-2px);
+    }
+
+    .linkedin-btn {
+        background: #0073b1;
+        color: #fff;
     }
 
     .linkedin-btn:hover {
         background: #005582;
+    }
+
+    .github-btn {
+        background: #333;
+        color: #fff;
+    }
+
+    .github-btn:hover {
+        background: #000;
     }
 </style>
 </head>
@@ -74,7 +97,11 @@
 <div class="card">
     <img src="profile.jpg" alt="Claudio Vitti" class="profile-img">
     <div class="name">Claudio Vitti</div>
-    <a href="https://www.linkedin.com/in/claudio-vitti-1078b617b" target="_blank" class="linkedin-btn">View LinkedIn</a>
+    <div class="title">Student</div>
+    <div class="buttons">
+        <a href="https://www.linkedin.com/in/claudio-vitti-1078b617b" target="_blank" rel="noopener noreferrer" class="btn linkedin-btn">LinkedIn</a>
+        <a href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer" class="btn github-btn">GitHub</a>
+    </div>
 </div>
 
 </body>
