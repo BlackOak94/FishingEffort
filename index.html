@@ -73,20 +73,28 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      text-decoration: none;
+      color: #fff; /* make sure the card text is white */
     }
     .card:hover {
       transform: translateY(-5px);
     }
-    .card a {
-      color: #fff;
-      text-decoration: none;
+    /* Title inside cards — white and bold */
+    .card span {
       font-weight: bold;
-      flex: 1; /* fill the card */
+      color: #fff;
+      font-size: 1.1em;
     }
     .card p {
       font-size: 0.9em;
       color: #ccc;
       margin-top: 5px;
+    }
+    /* Prevent purple visited color */
+    .card:link,
+    .card:visited {
+      color: #fff;
+      text-decoration: none;
     }
   </style>
 </head>
