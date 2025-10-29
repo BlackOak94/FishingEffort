@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +38,7 @@
         border-radius: 50%;
         object-fit: cover;
         margin-bottom: 20px;
-        border: 4px solid #0073b1; /* LinkedIn blue border */
+        border: 4px solid #0073b1; 
     }
 
     .name {
@@ -56,17 +55,19 @@
 
     .buttons {
         display: flex;
-        justify-content: center;
-        gap: 15px;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 10px;
     }
 
     .btn {
         display: inline-block;
-        padding: 10px 25px;
+        padding: 10px 20px;
         border-radius: 50px;
         font-weight: 600;
         text-decoration: none;
         transition: background 0.3s ease, transform 0.2s ease;
+        text-align: center;
     }
 
     .btn:hover {
@@ -90,6 +91,15 @@
     .github-btn:hover {
         background: #000;
     }
+
+    .adriatica-btn {
+        background: #1abc9c;
+        color: #fff;
+    }
+
+    .adriatica-btn:hover {
+        background: #16a085;
+    }
 </style>
 </head>
 <body>
@@ -97,10 +107,11 @@
 <div class="card">
     <img src="profile.jpg" alt="Claudio Vitti" class="profile-img">
     <div class="name">Claudio Vitti</div>
-    <div class="title">Student</div>
+    <div class="title">3D Animator & Marine Biology Enthusiast</div>
     <div class="buttons">
         <a href="https://www.linkedin.com/in/claudio-vitti-1078b617b" target="_blank" rel="noopener noreferrer" class="btn linkedin-btn">LinkedIn</a>
-        <a href="https://github.com/your-github-username" target="_blank" rel="noopener noreferrer" class="btn github-btn">GitHub</a>
+        <a href="https://github.com/claudiovitti" target="_blank" rel="noopener noreferrer" class="btn github-btn">GitHub</a>
+        <a href="#" target="_blank" rel="noopener noreferrer" class="btn adriatica-btn">Adriatica Timelines</a>
     </div>
 </div>
 
